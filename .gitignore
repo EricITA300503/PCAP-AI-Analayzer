@@ -1,0 +1,22 @@
+# Python Virtual Environments
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Local Environment Variables / Secrets (CRUCIAL)
+.env
+.env.local
+
+# Network Traffic Captures (Keep binary PCAPs off GitHub)
+*.pcap
+*.pcapng
+*.cap
+
+# OS Specific files
+.DS_Store
+Thumbs.db
+
+# VS Code specific environment files
+.vscode/
