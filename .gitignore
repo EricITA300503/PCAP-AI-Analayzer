@@ -20,3 +20,5 @@ Thumbs.db
 
 # VS Code specific environment files
 .vscode/
+# EXCEPTION: Allow our specific mock data playground files
+!sample_captures/*.pcap
