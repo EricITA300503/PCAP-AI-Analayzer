@@ -56,3 +56,15 @@ GROQ_API_KEY=gsk_your_api_key_here
 ```Bash
 streamlit run main.py
 ```
+## 🧪 Built-In Playground (Test Scenarios)
+You don't need to capture your own network traffic to test the AI. This repository includes a sample_captures/ directory with pre-generated scenarios designed to trigger specific persona behaviors:
+
+01_soc_cleartext_ftp.pcap: Simulates an FTP brute force attack culminating in a successful cleartext credential exposure. (Best viewed with the SOC Analyst Persona).
+
+02_dfir_dns_tunneling.pcap: Contains encoded subdomains simulating data exfiltration / C2 beaconing. (Best viewed with the DFIR Persona + Intent Analysis enabled).
+
+03_neteng_tcp_storm.pcap: Simulates a severe network bottleneck with massive TCP SYN retransmissions and dropped ACKs. (Best viewed with the Network Engineer Persona).
+
+Note: You can regenerate or modify these mock captures at any time by running python make_test_caps.py (requires Scapy).
+
+Created by Eric Bertero. Connect with me on [LinkedIn](https://www.linkedin.com/in/ericbertero/).
